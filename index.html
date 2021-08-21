@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Variables y operadores aritméticos</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Mi estilo -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <h1>Variables y Operadores aritméticos</h1>
+
+<!-- Toggler Diagrama de Flujo -->
+    <section>
+        <div class="button_box">
+        <button class="button_diagram" onclick="myFunction()">Mostrar diagrama de flujo</button>
+        </div>
+        <div class="container" id="hide">
+            <img src="assets/img/Diagrama de flujo.png" alt="Diagrama de flujo">
+        </div>
+    </section>
+
+<!-- Convertidor de grados Celsius -->
+    <section class="box_calculator">
+        <h2>Convertidor de grados Celsius</h2>
+        <input id="celsius_input" type="text" placeholder="Ingrese grados Celsius">
+        <button onclick="convert()">Convertir</button>
+
+        <p>Temperatura en grados Kelvin: <span id="kelvin"></span></p>
+        <p>Temperatura en grados Fahrenheit: <span id="fahrenheit"></span> </p>
+    </section>
+
+    <!-- Calculo de años, semanas y días -->
+    <section class="box_days">
+        <h2>¿Cuantos días?</h2>
+        <input id="days_input" type="text" placeholder="Ingrese número de días"
+        oninput="daysInYears(this.value)" onchange="daysInYears(this.value)">
+
+        <p>La cantidad de años, semanas y días es: <span id="days_output"></span> </p>
+    </section>
+
+    <!-- Operación con suma y promedio -->
+    <form class="box_numbers" id="form">
+        <h2>Por favor, ingresa cinco números</h2>
+            <input type="text" placeholder="Primer número" name="num1"><br>
+            <input type="text" placeholder="Segundo número" name="num2"><br>
+            <input type="text" placeholder="Tercer número" name="num3"><br>
+            <input type="text" placeholder="Cuarto número" name="num4"><br>
+            <input type="text" placeholder="Quinto número:" name="num5"><br><br>
+          
+            <button type="button" onclick="numbers()">Calcular</button><br>
+            <p id="suma"></p>
+            <p id="promedio"></p>
+    </form>
+
+   
+     
+    <!-- Javascript -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

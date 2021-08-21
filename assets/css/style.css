@@ -1,0 +1,74 @@
+/* Un poco de CSS para facilitar lectura */
+
+.box_calculator {
+    padding-left: 20px;
+    border: 1px solid green ;
+    width: 400px;
+    height: 200px;
+    }
+
+.box_days {
+    margin-top: 20px;
+    padding-left: 20px;
+    border: 1px solid green ;
+    width: 400px;
+    height: 200px;
+}
+
+.box_numbers {
+    margin-top: 20px;
+    padding-left: 20px;
+    border: 1px solid green ;
+    width: 400px;
+    height: 320px;
+}
+
+
+form input {
+    margin-top: 5px;
+}
+
+
+.button_diagram {
+    background-color: #e1c0e5;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 4px 2px;
+    border: 2px solid #000000;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.button_box {
+        margin: 0;
+        position: absolute;
+        left: 60%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+      }
+
+
+.button_diagram:hover {
+    background-color: #c672cf
+}
+
+.button_diagram:active {
+    background-color: #c672cf;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.container {
+    display: none;
+        position: relative;
+    }
+    .container img {
+        position: absolute;
+        top: 50px;
+        right: 425px;
+    }  
